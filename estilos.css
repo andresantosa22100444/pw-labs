@@ -1,0 +1,61 @@
+* {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    max-width: 500px;
+
+}
+
+body {
+    background-color: green;
+}
+
+h1 {
+    color: red;
+}
+
+.importante {
+    font-weight: bold;
+    color: tomato;
+}
+
+#unico {
+    background-color: aqua;
+}
+
+a[target=blank] {
+    background-color: mediumaquamarine;
+}
+
+
+
+p::first-letter {
+    font-size: xx-large;
+}
+
+fieldset {
+    background-color: wheat;
+    max-width: fit-content;
+    max-height: fit-content;
+
+
+}
+
+.legend {
+    background-color: wheat;
+}
+
+.input {
+    background-color: aliceblue;
+}
+
+.div:hover {
+    background-color: blueviolet;
+}
+
+link {
+    color: skyblue;
+}
+
+:visited {
+    color: darkblue;
+}
