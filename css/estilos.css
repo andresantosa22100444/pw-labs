@@ -6,6 +6,10 @@
     font-family: sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 body>* {
     /* centrando o <p> dos divs */
@@ -28,6 +32,24 @@ header {
     justify-content: space-between;
 }
 
+li {
+    display: inline;
+    float: left;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 8px 16px;
+    background-color: black;
+}
+
+li a:hover {
+    background-color: white;
+}
+
+
+
 nav {
     display: flex;
     justify-contents: flex-end;
@@ -36,10 +58,22 @@ nav {
 
 nav a {
     display: block;
-    padding: 0 1em;
+    padding: 1em;
     text-decoration: none;
     font-size: 1rem;
-    color: white
+    color: white;
+    border: 2px solid white;
+    border-radius: 5rem;
+}
+
+nav a:hover {
+    color: blue;
+    background-color: aliceblue;
+}
+
+.cur {
+    color: blue;
+    background-color: aliceblue;
 }
 
 
@@ -74,20 +108,21 @@ main>p {
     /* ADD THIS LINE */
 
     /* Background styles */
-    background-image: url('https://codetheweb.blog/assets/img/posts/full-image-hero/image.jpg');
+    background-image: url('/imagens/cidade.jpg'), linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8));
+    background-blend-mode: overlay;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-.hero h1 {
+.hero h2 {
     /* Text styles */
-    font-size: 5em;
+    font-size: 1.5em;
 
     /* Margins */
     margin-top: 0;
-    margin-bottom: 0.5em;
+    margin-bottom: 0em;
 }
 
 .hero .btn {
@@ -105,7 +140,7 @@ main>p {
     color: white;
     /* CHANGE THIS LINE */
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1em;
 
     /* Border styles */
     border: 3px solid white;
