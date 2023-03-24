@@ -1,5 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+
+@media(max-width:600px) {
+    body {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 9vw 7vw 1fr 7vw 7vw;
+        grid-template-areas:
+            'header'
+            'menu'
+            'main'
+            'aside'
+            'footer';
+    }
+}
+
+
+
 * {
     padding: 0;
     margin: 0;
