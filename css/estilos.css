@@ -58,26 +58,62 @@ main>p {
     font-size: 3rem;
 }
 
-article.primeiro {
-    /* definindo altura e cor */
-    height: 90vh;
-    background: orange;
-    padding: 0 4vw;
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Text styles */
     text-align: center;
-    font-size: 2rem;
-}
+    color: white;
+    /* ADD THIS LINE */
 
-
-article.segundo {
-    /* como tem menu e rodapé visíveis (10vh cada), define-se como altura 80vh. */
-    height: 80vh;
-    background-image: url("");
+    /* Background styles */
+    background-image: url('https://codetheweb.blog/assets/img/posts/full-image-hero/image.jpg');
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    align-items: start;
 }
+
+.hero h1 {
+    /* Text styles */
+    font-size: 5em;
+
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.hero .btn {
+    /* Positioning and sizing */
+    display: block;
+    width: 200px;
+
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Text styles */
+    color: white;
+    /* CHANGE THIS LINE */
+    text-decoration: none;
+    font-size: 1.5em;
+
+    /* Border styles */
+    border: 3px solid white;
+    /* CHANGE THIS LINE */
+    border-radius: 20px;
+}
+
+
 
 footer {
     /* definindo altura e cor */
