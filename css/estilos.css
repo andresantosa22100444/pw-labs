@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
-
-
-
-
 * {
     padding: 0;
     margin: 0;
@@ -17,6 +12,7 @@ html {
 
 
 body>* {
+    /* centrando o <p> dos divs */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +21,7 @@ body>* {
 
 /* div "menu" */
 header {
-    /* O menu está sticky e ocupa 10vh da altura do viewport */
+
     height: 10vh;
     background: black;
     color: white;
@@ -36,51 +32,60 @@ header {
     justify-content: space-between;
 }
 
+li {
+    display: inline;
+    float: left;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 8px 16px;
+    background-color: black;
+}
+
+li a:hover {
+    background-color: white;
+}
+
+
 
 nav {
     display: flex;
-    background-color: black;
-    padding: 30px 50px;
+    justify-contents: flex-end;
 }
 
 
 nav a {
-
     display: block;
     padding: 1em;
+    margin: 0.2em;
     text-decoration: none;
     font-size: 1rem;
     color: white;
-
+    border: 2px solid white;
+    border-radius: 5rem;
 }
 
 nav a:hover {
-    background: none;
+    background: white;
     display: block;
     text-align: center;
     border: 2px solid #3498db;
     outline: none;
-    color: #F3EEEC;
-    border-radius: 24px;
-    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+    color: black;
+    border-radius: 5rem;
+    box-shadow: 0 0 19px rgba(25, 171, 255, 0.7);
     transition: 0.5s;
-
 }
 
-.cur {
-    background: none;
-    display: block;
-    text-align: center;
-    border: 2px solid #3498db;
-    outline: none;
-    color: #F3EEEC;
-    border-radius: 24px;
-    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+nav a:active {
+    color: blue
 }
 
 
 main {
-    /* como o menu ocupa 10vh, este tem 90vh para o vermo inteiro. */
+
     height: 90vh;
     background-image: url("/imagens/cidade.jpg");
     background-repeat: no-repeat;
@@ -95,21 +100,13 @@ main>p {
 }
 
 .hero {
-    /* Sizing */
     width: 100vw;
     height: 100vh;
 
-    /* Flexbox stuff */
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    /* Text styles */
     text-align: center;
     color: white;
-    /* ADD THIS LINE */
 
-    /* Background styles */
     background-image: url('/imagens/cidade.jpg'), linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8));
     background-blend-mode: overlay;
     background-size: cover;
@@ -117,6 +114,16 @@ main>p {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+.section {
+    display: flex;
+    flex-direction: row;
+
+    text-align: center;
+
+    align-content: center;
+}
+
 
 .hero h2 {
     /* Text styles */
